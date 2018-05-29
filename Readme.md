@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Vasiliy Z.](https://up.htmlacademy.ru/htmlcss/21/user/672153).
-* Наставник: `Неизвестно`.
+* Наставник: [Яна Крикливая](https://up.htmlacademy.ru/htmlcss/21/user/124052).
 
 ---
 
