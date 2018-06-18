@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: normal;
+  line-height: 24px;
+  color: #283136; }
+
+a {
+  text-decoration: none; }
+
+.accent-bg {
+  background-color: #EEEEEE; }
+
+.menu {
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000; }
+
+.menu__list {
+  list-style: none; }
+
+.cart {
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000; }
+
+.slide__title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500; }
+
+.btn {
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #fb565a; }
+
+.service__title {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000; }
+
+.about-us__slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000; }
+
+.about-us__text--bold {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000; }
+
+.about-us__stats-value {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #000000; }
+
+.about-us__stats-term {
+  line-height: 18px; }
+
+.partners__list {
+  list-style: none; }
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000; }
+
+.contacts__text {
+  line-height: 18px; }
+
+.socials__link {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #E1E1E1; }
+
+.affiliate__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000000; }
+
+.affiliate__text {
+  line-height: 22px; }
+
+.popup__legend {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #000000; }
+
+.popup__field {
+  font-weight: bold;
+  line-height: 18px; }
+
+.shop-title-container__text {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000; }
+
+.filter__legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase; }
+
+.filter__option {
+  line-height: 20px; }
+
+.range__label {
+  line-height: 20px;
+  text-transform: uppercase; }
+
+.range__track {
+  background-color: #EEEEEE; }
+
+.range__output {
+  background-color: #EEEEEE; }
+
+.sorting__text {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.sorting__link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3); }
+
+.sorting__link {
+  color: #000000; }
+
+.card__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000; }
+
+.card__description {
+  line-height: 18px;
+  color: #666666; }
+
+.card__iner {
+  background-color: #EEEEEE; }
+
+.pagination__item {
+  background-color: #EEEEEE; }
+
+.pagination__link {
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #000000; }
+
+/*# sourceMappingURL=style.css.map */

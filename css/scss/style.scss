@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+// Базовые стили
+@import "base";
+
+// Блоки
+@import "blocks/accent-bg/accent-bg";
+@import "blocks/menu/menu";
+@import "blocks/cart/cart";
+@import "blocks/slide/slide";
+@import "blocks/btn/btn";
+@import "blocks/service/service";
+@import "blocks/about-us/about-us";
+@import "blocks/partners/partners";
+@import "blocks/contacts/contacts";
+@import "blocks/socials/socials";
+@import "blocks/affiliate/affiliate";
+@import "blocks/popup/popup";
+
+@import "blocks/shop-title-container/shop-title-container";
+@import "blocks/filter/filter";
+@import "blocks/range/range";
+@import "blocks/sorting/sorting";
+@import "blocks/card/card";
+@import "blocks/pagination/pagination";
