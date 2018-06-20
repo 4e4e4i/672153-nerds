@@ -8,3 +8,10 @@
 node_modules/
 npm-debug.*
 Thumbs.db
+
+# Ignore docs files
+.sass-cache
+.sass-cache/*
+styles/.sass-cache
+styles/.sass-cache/*
+css/style.css.map
