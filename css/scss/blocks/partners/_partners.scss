@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+.partners {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .partners__list {
+  display: flex;
+  justify-content: space-around;
   list-style: none;
 }

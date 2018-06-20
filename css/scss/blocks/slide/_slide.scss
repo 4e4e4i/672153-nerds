@@ -1,5 +1,11 @@
 @charset "UTF-8";
 
+.slide {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
 .slide__title {
   font-size: 55px;
   line-height: 55px;

@@ -25,8 +25,29 @@ body {
 a {
   text-decoration: none; }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px; }
+
+.page-container {
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 40px;
+  padding-left: 40px; }
+
 .accent-bg {
+  width: 100%;
   background-color: #EEEEEE; }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 48px;
+  margin-bottom: 14px; }
 
 .menu {
   line-height: 30px;
@@ -35,13 +56,25 @@ a {
   color: #000000; }
 
 .menu__list {
+  display: flex;
   list-style: none; }
+
+.menu__btn:not(:first-child) {
+  margin-left: 32px; }
 
 .cart {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000; }
+
+.slider {
+  width: 100%; }
+
+.slide {
+  width: 400px;
+  display: flex;
+  flex-direction: column; }
 
 .slide__title {
   font-size: 55px;
@@ -55,11 +88,43 @@ a {
   text-transform: uppercase;
   background-color: #fb565a; }
 
+.page-content {
+  width: 100%;
+  padding-top: 80px; }
+
+.services {
+  width: 100%;
+  margin-bottom: 84px; }
+
+.services__list {
+  list-style: none;
+  display: flex; }
+
+.service {
+  width: 300px;
+  margin-right: 100px;
+  flex-direction: column; }
+
 .service__title {
   font-size: 24px;
   line-height: 30px;
   font-weight: bold;
   color: #000000; }
+
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 74px; }
+
+.about-us__introducing {
+  width: 660px; }
+
+.about-us__capabilities {
+  width: 380px;
+  display: flex;
+  flex-direction: column; }
 
 .about-us__slogan {
   font-size: 45px;
@@ -81,8 +146,25 @@ a {
 .about-us__stats-term {
   line-height: 18px; }
 
+.partners {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
 .partners__list {
+  display: flex;
+  justify-content: space-around;
   list-style: none; }
+
+.contacts {
+  position: absolute;
+  top: 55px;
+  left: 40px;
+  width: 216px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 52px;
+  z-index: 1;
+  background-color: #ffffff; }
 
 .contacts__title {
   font-size: 18px;
@@ -93,11 +175,39 @@ a {
 .contacts__text {
   line-height: 18px; }
 
+.map {
+  height: 418px;
+  width: 100%;
+  display: flex;
+  position: relative; }
+
+.map__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; }
+
+.page-footer {
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 70px; }
+
+.socials {
+  display: flex;
+  align-items: center;
+  margin-right: 140px; }
+
 .socials__link {
   height: 80px;
   width: 80px;
   border-radius: 50%;
-  background-color: #E1E1E1; }
+  background-color: #E1E1E1;
+  margin-right: 12px; }
+
+.affiliate {
+  width: 560px;
+  padding-right: 15px; }
 
 .affiliate__title {
   font-size: 36px;
@@ -107,6 +217,10 @@ a {
 
 .affiliate__text {
   line-height: 22px; }
+
+.popup {
+  position: absolute;
+  padding: 68px 100px 86px 100px; }
 
 .popup__legend {
   font-size: 45px;
@@ -118,18 +232,36 @@ a {
   font-weight: bold;
   line-height: 18px; }
 
+.catalog {
+  display: flex;
+  justify-content: space-between; }
+
+.catalog__column {
+  display: flex;
+  flex-direction: column; }
+
+.shop-title-container {
+  display: flex;
+  justify-content: center; }
+
 .shop-title-container__text {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
   color: #000000; }
 
+.filter {
+  width: 260px;
+  display: flex;
+  flex-direction: column; }
+
 .filter__legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   color: #000000;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 56px; }
 
 .filter__option {
   line-height: 20px; }
@@ -143,6 +275,17 @@ a {
 
 .range__output {
   background-color: #EEEEEE; }
+
+.sorting {
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px; }
+
+.sorting__list {
+  display: flex;
+  align-items: center; }
 
 .sorting__text {
   font-size: 18px;
@@ -159,6 +302,17 @@ a {
 .sorting__link {
   color: #000000; }
 
+.cards {
+  width: 760px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px; }
+
+.card {
+  width: 360px;
+  margin-bottom: 36px; }
+
 .card__name {
   font-size: 18px;
   line-height: 30px;
@@ -172,6 +326,9 @@ a {
 
 .card__iner {
   background-color: #EEEEEE; }
+
+.pagination {
+  display: flex; }
 
 .pagination__item {
   background-color: #EEEEEE; }

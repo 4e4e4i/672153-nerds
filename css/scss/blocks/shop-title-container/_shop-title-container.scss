@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+.shop-title-container {
+  display: flex;
+  justify-content: center;
+}
+
 .shop-title-container__text {
   font-size: 55px;
   line-height: 55px;

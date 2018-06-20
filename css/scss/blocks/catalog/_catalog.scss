@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.catalog {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__column {
+  display: flex;
+  flex-direction: column;
+}

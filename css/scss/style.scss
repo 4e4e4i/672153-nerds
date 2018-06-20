@@ -4,22 +4,34 @@
 @import "base";
 
 // Блоки
+@import "blocks/page-container/page-container";
 @import "blocks/accent-bg/accent-bg";
+@import "blocks/page-header/page-header";
 @import "blocks/menu/menu";
 @import "blocks/cart/cart";
+@import "blocks/slider/slider";
 @import "blocks/slide/slide";
 @import "blocks/btn/btn";
+
+//main
+@import "blocks/page-content/page-content";
+@import "blocks/services/services";
 @import "blocks/service/service";
 @import "blocks/about-us/about-us";
 @import "blocks/partners/partners";
 @import "blocks/contacts/contacts";
+@import "blocks/map/map";
+@import "blocks/page-footer/page-footer";
 @import "blocks/socials/socials";
 @import "blocks/affiliate/affiliate";
 @import "blocks/popup/popup";
 
+//shop
+@import "blocks/catalog/catalog";
 @import "blocks/shop-title-container/shop-title-container";
 @import "blocks/filter/filter";
 @import "blocks/range/range";
 @import "blocks/sorting/sorting";
+@import "blocks/cards/cards";
 @import "blocks/card/card";
 @import "blocks/pagination/pagination";

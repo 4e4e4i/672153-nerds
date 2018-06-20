@@ -1,5 +1,23 @@
 @charset "UTF-8";
 
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 74px;
+}
+
+.about-us__introducing {
+  width: 660px;
+}
+
+.about-us__capabilities {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
 .about-us__slogan {
   font-size: 45px;
   line-height: 45px;

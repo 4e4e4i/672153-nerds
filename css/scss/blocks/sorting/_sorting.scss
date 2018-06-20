@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+.sorting {
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.sorting__list {
+  display: flex;
+  align-items: center;
+}
+
 .sorting__text {
   font-size: 18px;
   line-height: 18px;

@@ -1,11 +1,18 @@
 @charset "UTF-8";
 
+.filter {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
 .filter__legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
+  margin-bottom: 56px;
 }
 
 .filter__option {

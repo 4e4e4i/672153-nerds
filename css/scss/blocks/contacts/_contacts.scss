@@ -1,5 +1,17 @@
 @charset "UTF-8";
 
+.contacts {
+  position: absolute;
+  top: 55px;
+  left: 40px;
+  width: 216px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 52px;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
 .contacts__title {
   font-size: 18px;
   line-height: 30px;

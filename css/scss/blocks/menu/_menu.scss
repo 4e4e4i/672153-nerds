@@ -7,5 +7,10 @@
   color: #000000;
 }
 .menu__list {
+  display: flex;
   list-style: none;
+}
+
+.menu__btn:not(:first-child) {
+  margin-left: 32px;
 }
