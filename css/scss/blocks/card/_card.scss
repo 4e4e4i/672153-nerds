@@ -3,6 +3,7 @@
 .card {
   width: 360px;
   margin-bottom: 36px;
+  position: relative;
 }
 
 .card__name {
@@ -19,5 +20,18 @@
 }
 
 .card__iner {
+  position: absolute;
+  bottom: 0;
   background-color: #EEEEEE;
+}
+
+.card__info {
+  box-sizing: border-box;
+  width: 360px;
+  text-align: center;
+  padding: 30px 60px 44px 60px
+}
+
+.card__btn {
+  margin: 30px auto 0 auto;
 }
