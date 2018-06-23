@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 .catalog {
+  padding-top: 58px;
+}
+
+.catalog__wrapper {
   display: flex;
   justify-content: space-between;
 }

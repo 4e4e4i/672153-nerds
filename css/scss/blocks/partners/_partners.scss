@@ -8,5 +8,21 @@
 .partners__list {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.partners__link {
+  display: inline-block;
+  opacity: 0.2;
+}
+
+.partners__link:hover, .partners__link:focus {
+  opacity: 1;
+}
+
+.partners__link:active {
+  opacity: 0.1;
 }

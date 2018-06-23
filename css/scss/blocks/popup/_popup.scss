@@ -3,6 +3,13 @@
 .popup {
   position: absolute;
   padding: 68px 100px 86px 100px;
+  width: 960px;
+}
+
+.popup__container {
+  border: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .popup__legend {
@@ -15,4 +22,11 @@
 .popup__field {
   font-weight: bold;
   line-height: 18px;
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+}
+
+.popup__field:last-of-type {
+  width: 100%;
 }

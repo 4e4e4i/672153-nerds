@@ -4,8 +4,9 @@
 @import "base";
 
 // Блоки
-@import "blocks/page-container/page-container";
+@import "blocks/page-wrapper/page-wrapper";
 @import "blocks/accent-bg/accent-bg";
+@import "blocks/logo/logo";
 @import "blocks/page-header/page-header";
 @import "blocks/menu/menu";
 @import "blocks/cart/cart";
@@ -25,6 +26,8 @@
 @import "blocks/socials/socials";
 @import "blocks/affiliate/affiliate";
 @import "blocks/popup/popup";
+@import "blocks/field/field";
+@import "blocks/btn-close/btn-close";
 
 //shop
 @import "blocks/catalog/catalog";

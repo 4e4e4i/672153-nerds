@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.field__input {
+  width: 100%;
+  padding: 14px 14px;
+  margin-bottom: 30px;
+  border: 2px solid #d7dcde;
+}
+
+.field__input:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.field__input:focus {
+  border: 2px solid #000000;
+  outline: none;
+}
+
+.field__input:invalid {
+  border: 2px solid #e74246;
+  color: #e74246;
+}

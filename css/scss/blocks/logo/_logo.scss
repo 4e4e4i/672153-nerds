@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.logo__link {
+  display: inline-block;
+}
+
+.logo__link:hover, .logo__link:focus {
+  opacity: 0.8;
+}
+
+.logo__link:active {
+  opacity: 0.3;
+}

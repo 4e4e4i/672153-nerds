@@ -3,11 +3,16 @@
 .slide {
   width: 400px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .slide__title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+}
+
+.slide .slide__btn {
+  padding-right: 55px;
+  padding-left: 55px;
 }

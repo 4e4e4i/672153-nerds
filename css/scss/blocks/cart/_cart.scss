@@ -6,3 +6,15 @@
   text-transform: uppercase;
   color: #000000;
 }
+
+.cart__link:hover, .cart__link:focus {
+  color: #fb565a;
+}
+
+.cart__link:active {
+  opacity: 0.3;
+}
+
+.cart__link--active {
+  border-bottom: 2px solid #fb565a;
+}
