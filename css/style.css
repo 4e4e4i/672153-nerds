@@ -119,8 +119,8 @@ a {
 .slider {
   width: 100%;
   position: relative;
-  padding-top: 74px;
-  padding-bottom: 56px; }
+  padding-top: 55px;
+  padding-bottom: 80px; }
 
 .slider__controls {
   position: absolute;
@@ -151,7 +151,12 @@ a {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  margin: 0; }
+  margin-top: 0;
+  margin-bottom: 26px; }
+
+.slide__text {
+  margin-top: 0;
+  margin-bottom: 40px; }
 
 .slide .slide__btn {
   padding-right: 55px;
