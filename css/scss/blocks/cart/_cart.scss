@@ -1,13 +1,16 @@
 @charset "UTF-8";
 
 .cart {
+  position: relative;
+  margin-left: 45px;
+  padding-left: 40px;
+}
+
+.cart__btn {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
-  padding-left: 40px;
-  margin-left: 45px;
-  position: relative;
 }
 
 .cart::before {
@@ -22,14 +25,14 @@
   transform: translateY(-6px);
 }
 
-.cart__link:hover, .cart__link:focus {
+.cart__btn:hover, .cart__btn:focus {
   color: #fb565a;
 }
 
-.cart__link:active {
+.cart__btn:active {
   opacity: 0.3;
 }
 
-.cart__link--active {
+.cart__btn--active {
   border-bottom: 2px solid #fb565a;
 }
