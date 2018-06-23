@@ -6,10 +6,15 @@
   flex-wrap: wrap;
 }
 
+.slide:not(:first-child) {
+  display: none;
+}
+
 .slide__title {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin: 0;
 }
 
 .slide .slide__btn {
