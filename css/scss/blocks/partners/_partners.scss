@@ -1,8 +1,11 @@
 @charset "UTF-8";
 
 .partners {
-  padding-top: 40px;
+  padding-top: 45px;
   padding-bottom: 40px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 80px;
 }
 
 .partners__list {
@@ -12,6 +15,22 @@
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.partners__item:not(:last-of-type) {
+  padding-right: 50px;
+  position: relative;
+}
+
+.partners__item::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-26px);
+  height: 52px;
+  width: 2px;
+  background-color: #EEEEEE;
 }
 
 .partners__link {

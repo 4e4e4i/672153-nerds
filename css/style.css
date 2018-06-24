@@ -70,7 +70,8 @@ a {
   display: flex;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  padding-top: 8px; }
 
 .menu__link {
   display: inline-block; }
@@ -88,26 +89,29 @@ a {
   margin-left: 45px; }
 
 .cart {
-  position: relative;
-  margin-left: 45px;
-  padding-left: 40px; }
+  padding-top: 8px;
+  margin-left: 45px; }
 
 .cart__btn {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #000000; }
+  color: #000000;
+  position: relative;
+  display: inline-block;
+  padding-left: 42px; }
 
-.cart::before {
+.cart__btn::before {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 15px;
   left: 0;
+  transform: translateY(-6px);
   width: 15px;
   height: 15px;
   background-image: url("/img/cart-icon.svg");
-  background-size: 15px 15px;
-  transform: translateY(-6px); }
+  background-repeat: no-repeat;
+  background-position: 0 0; }
 
 .cart__btn:hover, .cart__btn:focus {
   color: #fb565a; }
@@ -154,7 +158,7 @@ a {
   line-height: 55px;
   font-weight: 500;
   margin-top: 0;
-  margin-bottom: 26px; }
+  margin-bottom: 28px; }
 
 .slide__text {
   margin-top: 0;
@@ -219,7 +223,7 @@ a {
 
 .services {
   width: 100%;
-  margin-bottom: 84px; }
+  margin-bottom: 81px; }
 
 .services__list {
   list-style: none;
@@ -237,13 +241,19 @@ a {
   line-height: 30px;
   font-weight: bold;
   color: #000000;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 17px; }
 
 .service__image {
   height: 146px;
   width: 300px;
+  margin-bottom: 24px;
   background-repeat: no-repeat;
   background-position: center center; }
+
+.service__text {
+  margin-bottom: 32px; }
 
 .service__image--laptop {
   background-image: url("/img/illustration-1.jpg"); }
@@ -257,13 +267,14 @@ a {
 .about-us {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 74px; }
+  padding-top: 34px;
+  margin-bottom: 50px;
+  border-top: 2px solid #eeeeee; }
 
 .about-us__introducing {
   width: 660px;
   display: flex;
+  padding-top: 38px;
   flex-direction: column; }
 
 .about-us__list {
@@ -272,27 +283,56 @@ a {
   padding: 0; }
 
 .about-us__capabilities {
-  width: 380px;
+  width: 360px;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
 
 .about-us__slogan {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 33px;
   color: #000000; }
+
+.about-us__text {
+  margin-top: 0;
+  margin-bottom: 39px; }
 
 .about-us__text--bold {
   font-weight: bold;
   text-transform: uppercase;
-  color: #000000; }
+  color: #000000;
+  margin-bottom: 24px; }
+
+.about-us__list-item {
+  padding-left: 37px;
+  position: relative;
+  margin-bottom: 25px; }
+
+.about-us__list-item::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 1px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a; }
+
+.about-us__logo {
+  margin-bottom: 40px; }
 
 .about-us__stats-value {
   margin: 0;
   font-size: 45px;
   line-height: 45px;
   font-weight: bold;
-  color: #000000; }
+  color: #000000;
+  margin-bottom: 23px; }
+
+.about-us__percent {
+  font-size: 65%; }
 
 .about-us__stats-term {
   line-height: 18px; }
@@ -302,11 +342,19 @@ a {
 
 .about-us__stats-col {
   display: flex;
-  flex-direction: column-reverse; }
+  flex-direction: column-reverse;
+  width: 110px;
+  margin-right: 10px; }
+
+.about-us__stats-col:last-of-type {
+  margin-right: 0; }
 
 .partners {
-  padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-top: 45px;
+  padding-bottom: 40px;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 80px; }
 
 .partners__list {
   display: flex;
@@ -315,6 +363,20 @@ a {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+.partners__item:not(:last-of-type) {
+  padding-right: 50px;
+  position: relative; }
+
+.partners__item::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-26px);
+  height: 52px;
+  width: 2px;
+  background-color: #EEEEEE; }
 
 .partners__link {
   display: inline-block;
@@ -361,13 +423,13 @@ a {
 .page-footer {
   display: flex;
   align-items: center;
-  padding-top: 70px;
+  padding-top: 35px;
   padding-bottom: 70px; }
 
 .socials {
   display: flex;
   align-items: center;
-  margin-right: 140px; }
+  margin-right: 125px; }
 
 .socials__link {
   height: 80px;
@@ -398,9 +460,11 @@ a {
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
-  color: #000000; }
+  color: #000000;
+  margin-bottom: 0; }
 
 .affiliate__text {
+  margin-top: 5px;
   line-height: 22px; }
 
 .popup {
