@@ -16,7 +16,7 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  min-width: 1260px;
   font-size: 16px;
   font-family: 'Roboto', Arial, sans-serif;
   font-weight: normal;
@@ -44,13 +44,13 @@ a {
   width: 100%;
   background-color: #EEEEEE; }
 
-.logo__link {
-  display: inline-block; }
+.logo__img {
+  margin-right: 100px; }
 
-.logo__link:hover, .logo__link:focus {
+.logo__img:hover, .logo__img:focus {
   opacity: 0.8; }
 
-.logo__link:active {
+.logo__img:active {
   opacity: 0.3; }
 
 .page-header {
@@ -68,6 +68,7 @@ a {
 
 .menu__list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -90,7 +91,7 @@ a {
 
 .cart {
   padding-top: 8px;
-  margin-left: 45px; }
+  margin-left: 100px; }
 
 .cart__btn {
   line-height: 30px;
@@ -128,6 +129,9 @@ a {
   padding-top: 55px;
   padding-bottom: 80px; }
 
+.slider__slide {
+  width: 400px; }
+
 .slider__controls {
   position: absolute;
   left: 50%;
@@ -145,13 +149,11 @@ a {
 .slider__control:last-child {
   margin-right: 0; }
 
-.slide {
-  width: 400px;
-  display: flex;
-  flex-wrap: wrap; }
-
-.slide:not(:first-child) {
+.slide--hidden {
   display: none; }
+
+.slide--shown {
+  display: block; }
 
 .slide__title {
   font-size: 55px;
@@ -164,7 +166,7 @@ a {
   margin-top: 0;
   margin-bottom: 40px; }
 
-.slide .slide__btn {
+.slide__btn {
   padding-right: 55px;
   padding-left: 55px; }
 
@@ -206,35 +208,26 @@ a {
   box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
   color: rgba(255, 255, 255, 0.7); }
 
-.btn--filter {
-  background-color: #eeeeee;
-  color: #000000;
-  border: none; }
-
-.btn--filter:hover, .btn--filter:focus {
-  background-color: #dfdfdf; }
-
-.btn--filter:active {
-  background-color: #d5d5d5; }
-
 .page-content {
   width: 100%;
   padding-top: 80px; }
-
-.services {
-  width: 100%;
-  margin-bottom: 81px; }
 
 .services__list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 61px; }
 
-.service {
+.services__item {
   width: 300px;
   margin-right: 100px;
-  flex-direction: column; }
+  margin-bottom: 20px; }
+
+.services__item:nth-child(3n+3) {
+  margin-right: 0; }
 
 .service__title {
   font-size: 24px;
@@ -358,15 +351,19 @@ a {
 
 .partners__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0; }
 
-.partners__item:not(:last-of-type) {
+.partners__item {
   padding-right: 50px;
   position: relative; }
+
+.partners__item:last-child {
+  padding-right: 0; }
 
 .partners__item::after {
   content: '';
@@ -377,6 +374,9 @@ a {
   height: 52px;
   width: 2px;
   background-color: #EEEEEE; }
+
+.partners__item:last-child::after {
+  display: none; }
 
 .partners__link {
   display: inline-block;
@@ -393,8 +393,6 @@ a {
   top: 55px;
   left: 40px;
   width: 216px;
-  display: flex;
-  flex-wrap: wrap;
   padding: 50px 52px;
   z-index: 1;
   background-color: #ffffff; }
@@ -471,6 +469,12 @@ a {
   position: absolute;
   padding: 68px 100px 86px 100px;
   width: 960px; }
+
+.popup--hidden {
+  display: none; }
+
+.popup__shown {
+  display: block; }
 
 .popup__container {
   border: none;
@@ -552,9 +556,12 @@ a {
   display: flex;
   justify-content: space-between; }
 
-.catalog__column {
-  display: flex;
-  flex-direction: column; }
+.catalog__cards {
+  width: 760px;
+  margin-bottom: 60px; }
+
+.catalog__filter {
+  width: 260px; }
 
 .shop-title-container {
   display: flex;
@@ -568,11 +575,6 @@ a {
   line-height: 55px;
   font-weight: 500;
   color: #000000; }
-
-.filter {
-  width: 260px;
-  display: flex;
-  flex-direction: column; }
 
 .filter__field {
   border: none;
@@ -590,6 +592,17 @@ a {
 
 .filter__option {
   line-height: 20px; }
+
+.filter__btn {
+  background-color: #eeeeee;
+  color: #000000;
+  border: none; }
+
+.filter__btn:hover, .btn--filter:focus {
+  background-color: #dfdfdf; }
+
+.filter__btn--filter:active {
+  background-color: #d5d5d5; }
 
 .range__label {
   line-height: 20px;
@@ -638,15 +651,15 @@ a {
   color: #000000; }
 
 .cards {
-  width: 760px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 60px; }
+  justify-content: space-between; }
+
+.cards__item {
+  width: 360px;
+  margin-bottom: 36px; }
 
 .card {
-  width: 360px;
-  margin-bottom: 36px;
   position: relative; }
 
 .card__name {

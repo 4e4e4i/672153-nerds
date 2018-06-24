@@ -1,0 +1,25 @@
+.slide--hidden {
+  display: none;
+}
+
+.slide--shown {
+  display: block;
+}
+
+.slide__title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 28px;
+}
+
+.slide__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.slide__btn {
+  padding-right: 55px;
+  padding-left: 55px;
+}

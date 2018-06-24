@@ -10,11 +10,9 @@
   <div class="accent-bg">
     <div class="page-wrapper">
       <header class="page-header">
-        <div class="logo">
-          <a href="#" class="logo__link">
-            <img class="logo__img" src="./img/nerds-logo.png" alt="Нёрдс" height="65px" width="160px">
-          </a>
-        </div>
+        <a class="logo">
+          <img class="logo__img" src="./img/nerds-logo.png" alt="Нёрдс" height="65px" width="160px">
+        </a>
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__btn">
@@ -43,17 +41,17 @@
           <button class="slider__control">Кнопка слайдера 3</button>
         </div>
         <div class="slider__wrap">
-          <section class="slide slider__slide">
+          <section class="slide slide--shown slider__slide">
             <h2 class="slide__title">Долго, дорого, скрупулезно.</h2>
             <p class="slide__text">Математически выверенный дизайн для&nbsp;вашего сайта или мобильного приложения.</p>
             <a href="#" class="btn slide__btn">Узнать больше</a>
           </section>
-          <section class="slide slider__slide">
+          <section class="slide slide--hidden slider__slide">
             <h2 class="slide__title">Любим математику как никто другой</h2>
             <p class="slide__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
             <a href="#" class="btn slide__btn">Узнать больше</a>
           </section>
-          <section class="slide slider__slide">
+          <section class="slide slide--hidden slider__slide">
             <h2 class="slide__title">Только ночь, только хардкор</h2>
             <p class="slide__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
             <a href="#" class="btn slide__btn">Узнать больше</a>
@@ -67,19 +65,19 @@
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services__list">
-          <li class="service">
+          <li class="services__item service">
             <div class="service__image service__image--laptop"></div>
             <h2 class="service__title">Веб-сайты</h2>
             <p class="service__text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="btn service__btn" href="#">Заказать</a>
           </li>
-          <li class="service">
+          <li class="services__item service">
             <div class="service__image service__image--phones"></div>
             <h2 class="service__title">Приложения</h2>
             <p class="service__text">Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="btn btn--green service__btn" href="#">Заказать</a>
           </li>
-          <li class="service">
+          <li class="services__item service">
             <div class="service__image service__image--table"></div>
             <h2 class="service__title">Презентации</h2>
             <p class="service__text">Вы даже не подозреваете, насколько вы изумительны!</p>
@@ -182,7 +180,7 @@
       </section>
     </footer>
   </div>
-  <div class="popup popup--hidden">
+  <div class="popup popup--hidden popup--shown">
     <form action="post" class="popup__form">
       <fieldset class="popup__container">
         <legend class="popup__legend">Напишите нам</legend>

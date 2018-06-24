@@ -1,0 +1,11 @@
+.logo__img {
+  margin-right: 100px;
+}
+
+.logo__img:hover, .logo__img:focus {
+  opacity: 0.8;
+}
+
+.logo__img:active {
+  opacity: 0.3;
+}

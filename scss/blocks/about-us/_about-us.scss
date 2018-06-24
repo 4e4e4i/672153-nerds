@@ -1,0 +1,100 @@
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 34px;
+  margin-bottom: 50px;
+  border-top: 2px solid #eeeeee;
+}
+
+.about-us__introducing {
+  width: 660px;
+  display: flex;
+  padding-top: 38px;
+  flex-direction: column;
+}
+
+.about-us__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us__capabilities {
+  width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us__slogan {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 33px;
+  color: #000000;
+}
+
+.about-us__text {
+  margin-top: 0;
+  margin-bottom: 39px;
+}
+
+.about-us__text--bold {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.about-us__list-item {
+  padding-left: 37px;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.about-us__list-item::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 1px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.about-us__logo {
+  margin-bottom: 40px;
+}
+
+.about-us__stats-value {
+  margin: 0;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 23px;
+}
+
+.about-us__percent {
+  font-size: 65%;
+}
+
+.about-us__stats-term {
+  line-height: 18px;
+}
+
+.about-us__stats {
+  display: flex;
+}
+
+.about-us__stats-col {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 110px;
+  margin-right: 10px;
+}
+
+.about-us__stats-col:last-of-type {
+  margin-right: 0;
+}

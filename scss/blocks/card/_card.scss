@@ -1,0 +1,33 @@
+.card {
+  position: relative;
+}
+
+.card__name {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.card__description {
+  line-height: 18px;
+  color: #666666;
+}
+
+.card__iner {
+  position: absolute;
+  bottom: 0;
+  background-color: #EEEEEE;
+}
+
+.card__info {
+  box-sizing: border-box;
+  width: 360px;
+  text-align: center;
+  padding: 30px 60px 44px 60px
+}
+
+.card__btn {
+  margin: 30px auto 0 auto;
+}

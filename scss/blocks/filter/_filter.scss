@@ -1,0 +1,33 @@
+.filter__field {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.filter__legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 56px;
+}
+
+.filter__option {
+  line-height: 20px;
+}
+
+.filter__btn {
+  background-color: #eeeeee;
+  color: #000000;
+  border: none;
+}
+
+.filter__btn:hover, .btn--filter:focus {
+  background-color: #dfdfdf;
+}
+
+.filter__btn--filter:active {
+  background-color: #d5d5d5;
+}

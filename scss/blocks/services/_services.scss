@@ -1,0 +1,19 @@
+.services__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 61px;
+}
+
+.services__item {
+  width: 300px;
+  margin-right: 100px;
+  margin-bottom: 20px;
+}
+
+.services__item:nth-child(3n+3) {
+  margin-right: 0;
+}
