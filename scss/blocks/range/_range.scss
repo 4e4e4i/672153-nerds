@@ -3,13 +3,73 @@
   text-transform: uppercase;
 }
 
-.range__track {
+.range__track-container {
+  padding: 39px 25px;
   background-color: #EEEEEE;
+  margin-bottom: 14px;
+  position: relative;
+}
+
+.range__track {
+  position: relative;
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.range__track-value {
+  position: absolute;
+  height: 2px;
+  width: 67%;
+  background-color: #00ca74;
+}
+
+.range__btn {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 1px 1px 0 #cccdcd;
+  cursor: pointer;
+}
+
+.range__btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -2px -2px;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #ababab;
+}
+
+.range__btn--from {
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.range__btn--to {
+  right: 0;
+  margin-top: -10px;
+  margin-right: 60px;
+}
+
+.range__outputs {
+  display: flex;
+  justify-content: space-between;
 }
 
 .range__output {
   background-color: #EEEEEE;
+  padding: 10px 10px;
+  text-align: center;
+  width: 60px;
+  overflow: hidden;
   border: none;
+  margin-left: 12px;
+  border-radius: 3px;
 }
 
 .range__btn {

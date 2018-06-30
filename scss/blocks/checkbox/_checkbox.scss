@@ -1,0 +1,27 @@
+.checkbox__label {
+  display: block;
+  opacity: 0.85;
+  padding: 0 0 4px 36px;
+}
+
+.checkbox__label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background: url("/img/checkbox-off.svg") no-repeat;
+  opacity: 0.45;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+  background: url("/img/checkbox-on.svg") no-repeat;
+}
+
+.checkbox__input:hover + .checkbox__label::before,
+.checkbox__input:focus + .checkbox__label::before,
+.checkbox__input:hover + .checkbox__label,
+.checkbox__input:focus + .checkbox__label {
+  opacity: 1;
+}

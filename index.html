@@ -5,6 +5,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
   <div class="accent-bg">
@@ -36,25 +37,34 @@
       <article class="slider">
         <h2 class="visually-hidden">Слайдер</h2>
         <div class="slider__controls">
-          <button class="slider__control">Кнопка слайдера 1</button>
-          <button class="slider__control">Кнопка слайдера 2</button>
-          <button class="slider__control">Кнопка слайдера 3</button>
+          <button id="slide1" class="slider__control slider__control--active">Кнопка слайдера 1</button>
+          <button id="slide2" class="slider__control">Кнопка слайдера 2</button>
+          <button id="slide3" class="slider__control">Кнопка слайдера 3</button>
         </div>
         <div class="slider__wrap">
-          <section class="slide slide--shown slider__slide">
-            <h2 class="slide__title">Долго, дорого, скрупулезно.</h2>
-            <p class="slide__text">Математически выверенный дизайн для&nbsp;вашего сайта или мобильного приложения.</p>
-            <a href="#" class="btn slide__btn">Узнать больше</a>
+          <section data-slide="slide1" class="slide slide--shown slider__slide">
+            <div class="slide__info">
+              <h2 class="slide__title">Долго, дорого, скрупулезно.</h2>
+              <p class="slide__text">Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного приложения.</p>
+              <a href="#" class="btn slide__btn">Узнать больше</a>
+            </div>
+            <img src="/img/slide1.png" alt="" class="slide__image">
           </section>
-          <section class="slide slide--hidden slider__slide">
-            <h2 class="slide__title">Любим математику как никто другой</h2>
-            <p class="slide__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-            <a href="#" class="btn slide__btn">Узнать больше</a>
+          <section data-slide="slide2" class="slide slider__slide">
+            <div class="slide__info">
+              <h2 class="slide__title">Любим математику как никто другой</h2>
+              <p class="slide__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a href="#" class="btn slide__btn">Узнать больше</a>
+            </div>
+            <img src="/img/slide2.png" alt="" class="slide__image">
           </section>
-          <section class="slide slide--hidden slider__slide">
-            <h2 class="slide__title">Только ночь, только хардкор</h2>
-            <p class="slide__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <a href="#" class="btn slide__btn">Узнать больше</a>
+          <section data-slide="slide3" class="slide slider__slide">
+            <div class="slide__info">
+              <h2 class="slide__title">Только ночь, только хардкор</h2>
+              <p class="slide__text">Работать днем, как все? Мы против этого. Ближе&nbsp;к&nbsp;полуночи работа только начинается.</p>
+              <a href="#" class="btn slide__btn">Узнать больше</a>
+            </div>
+            <img src="/img/slide3.png" alt="" class="slide__image">
           </section>
         </div>
       </article>
@@ -124,7 +134,7 @@
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="partners__list">
           <li class="partners__item">
-            <a href="#" class="partners__link">
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="partners__link">
               <img class="partners__logo" src="./img/logo-1.png"
                    alt="HTML Academy - онлайн курсы по HTML, CSS, JavaScript и PHP" height="68px" width="199px">
             </a>
@@ -151,7 +161,7 @@
     </div>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <div class="page-wrapper">
+      <div class="page-wrapper  map__container">
         <section class="contacts">
           <h3 class="visually-hidden">Контактная информация</h3>
           <p class="contacts__title">Nёrds design studio</p>
@@ -160,9 +170,8 @@
           <a href="#" class="btn contacts__btn">Напишите нам</a>
         </section>
       </div>
-      <img class="map__image" src="./img/map.jpg" alt="Карта с местоположением студии" height="418px" width="100%">
-      <iframe src="" frameborder="0" class="map__iframe">
-      </iframe>
+      <img class="map__image" src="./img/map.jpg" alt="Карта с местоположением студии" height="416px" width="1440">
+      <div id="map" class="map__iframe"></div>
     </section>
   </main>
   <div class="page-wrapper">
@@ -180,19 +189,21 @@
       </section>
     </footer>
   </div>
-  <div class="popup popup--hidden popup--shown">
+  <div class="popup popup--hidden">
     <form action="post" class="popup__form">
       <fieldset class="popup__container">
         <legend class="popup__legend">Напишите нам</legend>
-        <label class="popup__field field">
-          Ваше имя:
-          <input type="text" class="field__input" name="username" placeholder="Представьтесь, пожалуйста">
-        </label>
-        <label class="popup__field field">
-          Ваше email:
-          <input type="email" class="field__input" name="user_email" placeholder="Для отправки ответа" required>
-        </label>
-        <label class="popup__field field">
+        <div class="popup__row">
+          <label class="popup__field field">
+            Ваше имя:
+            <input type="text" class="field__input" name="username" placeholder="Имя Фамилия">
+          </label>
+          <label class="popup__field field">
+            Ваше email:
+            <input type="email" class="field__input" name="user_email" placeholder="email@example.com">
+          </label>
+        </div>
+        <label class="popup__field popup__field--textarea field">
           Текст письма:
           <textarea name="user-mail" class="field__textarea" placeholder="В свободной форме"></textarea>
         </label>
@@ -201,5 +212,10 @@
       <button type="button" class="btn-close">Закрыть форму "Напишите нам"</button>
     </form>
   </div>
+  <div class="popup-bg"></div>
+<script src="/js/slider.js"></script>
+<script src="/js/popup.js"></script>
+<script src="/js/map.js"></script>
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")></script>
 </body>
 </html>

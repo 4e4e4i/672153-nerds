@@ -1,10 +1,7 @@
 .contacts {
-  position: absolute;
-  top: 55px;
-  left: 40px;
   width: 216px;
-  padding: 50px 52px;
-  z-index: 1;
+  padding: 50px 50px;
+  z-index: 3;
   background-color: #ffffff;
 }
 
@@ -12,9 +9,26 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  margin: 0;
+  margin-bottom: 22px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .contacts__text {
   line-height: 18px;
+  margin: 0;
+  margin-bottom: 18px;
+  color: #666666;
+}
+
+.contacts__phone {
+  line-height: 18px;
+  color: #666666;
+}
+
+.contacts__btn {
+  margin-top: 35px;
+  box-sizing: border-box;
+  width: 100%;
 }

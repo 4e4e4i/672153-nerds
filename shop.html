@@ -5,6 +5,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
   <div class="accent-bg">
@@ -22,7 +23,7 @@
               <a href="#" class="menu__link">Клиенты</a>
             </li>
             <li class="menu__btn">
-              <a href="#" class="menu__link menu__link--active">Магазин</a>
+              <a class="menu__link menu__link--active">Магазин</a>
             </li>
             <li class="menu__btn">
               <a href="#" class="menu__link">Контакты</a>
@@ -45,13 +46,14 @@
           <fieldset class="filter__field">
             <legend class="filter__legend">Стоимость:</legend>
             <div class="range">
-              <div class="range__track">
-                <div class="range__selected">
+              <div class="range__track-container">
+                <div class="range__track">
+                  <div class="range__track-value"></div>
                   <button type="button" class="range__btn range__btn--from">Ползунок минимальной цены</button>
                   <button type="button" class="range__btn range__btn--to">Ползунок максимальной цены</button>
                 </div>
               </div>
-              <div class="range__output">
+              <div class="range__outputs">
                 <label class="range__label">
                   От
                   <input type="text" name="cost_from" class="range__output" value="0">
@@ -64,9 +66,9 @@
             </div>
           </fieldset>
           <fieldset class="filter__field">
-            <legend class="filter__legend">Сетка:</legend>
+            <legend class="filter__legend filter__legend--minor">Сетка:</legend>
             <label class="radio filter__option">
-              <input type="radio" class="radio__input visually-hidden" name="grid" value="adaptive">
+              <input type="radio" class="radio__input visually-hidden" name="grid" value="adaptive" checked>
               <span class="radio__label">Адаптивная</span>
             </label>
             <label class="radio filter__option">
@@ -79,9 +81,9 @@
             </label>
           </fieldset>
           <fieldset class="filter__field">
-            <legend class="filter__legend">Особенности:</legend>
+            <legend class="filter__legend filter__legend--minor">Особенности:</legend>
             <label class="checkbox filter__option">
-              <input type="checkbox" name="features" value="slider" class="checkbox__input visually-hidden">
+              <input type="checkbox" name="features" value="slider" class="checkbox__input visually-hidden" checked>
               <span class="checkbox__label">Слайдер</span>
             </label>
             <label class="checkbox filter__option">
@@ -89,12 +91,12 @@
               <span class="checkbox__label">Блок-преимуществ</span>
             </label>
             <label class="checkbox filter__option">
-              <input type="checkbox" name="features" value="news" class="checkbox__input visually-hidden">
+              <input type="checkbox" name="features" value="news" class="checkbox__input visually-hidden" checked>
               <span class="checkbox__label">Новости</span>
             </label>
             <label class="checkbox filter__option">
               <input type="checkbox" name="features" value="gallery" class="checkbox__input visually-hidden">
-              <span class=checkbox__label">Галерея</span>
+              <span class="checkbox__label">Галерея</span>
             </label>
             <label class="checkbox filter__option">
               <input type="checkbox" name="features" value="cart" class="checkbox__input visually-hidden">
@@ -120,13 +122,14 @@
             </li>
           </ul>
           <div class="sorting__directions">
-            <a href="#" class="sorting__direction sorting__direction--down"></a>
+            <a href="#" class="sorting__direction sorting__direction--active sorting__direction--down"></a>
             <a href="#" class="sorting__direction sorting__direction--up"></a>
           </div>
         </section>
-        <section class="cards">
+        <section class="cards cards__container">
           <h2 class="visually-hidden">Товары</h2>
           <article class="cards__item card">
+            <div class="card__browser"></div>
             <img src="./img/img-sedona.jpg" alt="Готовый шаблон гид-сайта города Sedona" class="card__img" height="576px" width="360px">
             <div class="card__iner">
               <div class="card__info">
@@ -137,6 +140,7 @@
             </div>
           </article>
           <article class="cards__item card">
+            <div class="card__browser"></div>
             <img src="./img/img-pink.jpg" alt="Готовый шаблон сайта приложения для смартфонов «Pink»" class="card__img" height="576px" width="360px">
             <div class="card__iner">
               <div class="card__info">
@@ -147,6 +151,7 @@
             </div>
           </article>
           <article class="cards__item card">
+            <div class="card__browser"></div>
             <img src="./img/img-barbershop.jpg" alt="Готовый шаблон сайта барбершопа «Borodinski»" class="card__img" height="576px" width="360px">
             <div class="card__iner">
               <div class="card__info">
@@ -157,6 +162,7 @@
             </div>
           </article>
           <article class="cards__item card">
+            <div class="card__browser"></div>
             <img src="./img/img-mishka.jpg" alt="Готовый шаблон магазина вязанных товаров «Mishka»" class="card__img" height="576px" width="360px">
             <div class="card__iner">
               <div class="card__info">
@@ -167,6 +173,7 @@
             </div>
           </article>
           <article class="cards__item card">
+            <div class="card__browser"></div>
             <img src="./img/img-aplus.jpg" alt="Готовый шаблон сайта «A Plus»" class="card__img" height="576px" width="360px">
             <div class="card__iner">
               <div class="card__info">
@@ -177,6 +184,7 @@
             </div>
           </article>
           <article class="cards__item card">
+            <div class="card__browser"></div>
             <img src="./img/img-kvast.jpg" alt="Готовый шаблон сайта магазина крафтового кваса «Kvast»" class="card__img" height="576px" width="360px">
             <div class="card__iner">
               <div class="card__info">
@@ -189,7 +197,7 @@
         </section>
         <ul class="pagination">
           <li class="pagination__item">
-            <a href="#" class="pagination__link pagination__link--current">1</a>
+            <a class="pagination__link pagination__link--current">1</a>
           </li>
           <li class="pagination__item">
             <a href="#" class="pagination__link">2</a>
@@ -205,17 +213,17 @@
     </div>
     <section class="map">
       <h2 class="visually-hidden">Карта</h2>
-      <div class="page-wrapper">
+      <div class="page-wrapper map__container">
         <section class="contacts">
           <h3 class="visually-hidden">Контактная информация</h3>
           <p class="contacts__title">Nёrds design studio</p>
-          <p class="contacts__text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+781227575" class="contatcs__phone">тел. +7(812)275-75-75</a>
+          <p class="contacts__text">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</p>
+          <a href="tel:+781227575" class="contacts__phone">тел. +7(812)275-75-75</a>
           <a href="#" class="btn contacts__btn">Напишите нам</a>
         </section>
       </div>
       <img class="map__image" src="./img/map.jpg" alt="Карта с местоположением студии" height="418px" width="100%">
-      <iframe src="" frameborder="0" class="map__iframe">
+      <div id="map" class="map__iframe"></div>
       </iframe>
     </section>
   </main>
@@ -238,15 +246,17 @@
     <form action="post" class="popup__form">
       <fieldset class="popup__container">
         <legend class="popup__legend">Напишите нам</legend>
-        <label class="popup__field field">
-          Ваше имя:
-          <input type="text" class="field__input" name="username" placeholder="Представьтесь, пожалуйста">
-        </label>
-        <label class="popup__field field">
-          Ваше email:
-          <input type="email" class="field__input" name="user_email" placeholder="Для отправки ответа" required>
-        </label>
-        <label class="popup__field field">
+        <div class="popup__row">
+          <label class="popup__field field">
+            Ваше имя:
+            <input type="text" class="field__input" name="username" placeholder="Имя Фамилия">
+          </label>
+          <label class="popup__field field">
+            Ваше email:
+            <input type="email" class="field__input" name="user_email" placeholder="email@example.com" required>
+          </label>
+        </div>
+        <label class="popup__field popup__field--textarea field">
           Текст письма:
           <textarea name="user-mail" class="field__textarea" placeholder="В свободной форме"></textarea>
         </label>
@@ -255,5 +265,10 @@
       <button type="button" class="btn-close">Закрыть форму "Напишите нам"</button>
     </form>
   </div>
+  <div class="popup-bg"></div>
+<script src="/js/slider.js"></script>
+<script src="/js/popup.js"></script>
+<script src="/js/map.js"></script>
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript")></script>
 </body>
 </html>

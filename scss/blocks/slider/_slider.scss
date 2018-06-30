@@ -6,23 +6,38 @@
 }
 
 .slider__slide {
-  width: 400px;
+  width: 520px;
 }
 
 .slider__controls {
   position: absolute;
-  left: 50%;
-  bottom: 114px;
+  left: 46%;
+  bottom: 95px;
+  z-index: 2;
 }
 
 .slider__control {
   font-size: 0;
-  height: 20px;
-  width: 20px;
+  height: 18px;
+  width: 18px;
   border-radius: 50%;
   background-color: #ffffff;
   border: none;
-  margin-right: 17px;
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.slider__control--active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  border: 3px solid #c3c3c3;
 }
 
 .slider__control:last-child {

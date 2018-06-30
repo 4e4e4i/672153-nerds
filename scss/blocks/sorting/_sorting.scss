@@ -1,21 +1,27 @@
 .sorting {
   width: 760px;
   display: flex;
-  align-items: center;
   margin-bottom: 56px;
 }
 
 .sorting__list {
   display: flex;
+  flex-wrap: wrap;
+  width: 293px;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.sorting__item {
+  margin-right: 24px;
+  margin-bottom: 6px;
+}
+
 .sorting__text {
   font-size: 18px;
-  line-height: 18px;
+  line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 0;
@@ -27,9 +33,62 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
+  opacity: 0.2;
 }
 
-.sorting__link {
-  color: #000000;
+.sorting__link:not(.sorting__link--active):hover,
+.sorting__link:not(.sorting__link--active):focus {
+  opacity: 0.5;
+}
+
+.sorting__link--active,
+.sorting__link:active {
+  opacity: 1;
+}
+
+.sorting__directions {
+  margin-left: auto;
+}
+
+.sorting__direction {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  opacity: 0.2;
+  position: relative;
+}
+
+.sorting__direction:not(.sorting__direction--active):hover,
+.sorting__direction:not(.sorting__direction--active):focus {
+  opacity: 0.5;
+}
+
+.sorting__direction--down::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 11px 6px 0 6px;
+  border-color: #000000 transparent transparent transparent;
+}
+
+.sorting__direction--up {
+  margin-left: 18px;
+}
+
+.sorting__direction--up::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 11px 6px;
+  border-color: transparent transparent #000000 transparent;
+}
+
+.sorting__direction--active,
+.sorting__direction:active {
+  opacity: 1;
 }

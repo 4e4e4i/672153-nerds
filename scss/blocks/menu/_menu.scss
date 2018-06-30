@@ -18,7 +18,8 @@
   display: inline-block;
 }
 
-.menu__link:hover, .menu__link:focus {
+.menu__link:not(.menu__link--active):hover,
+.menu__link:not(.menu__link--active):focus {
   color: #fb565a;
 }
 

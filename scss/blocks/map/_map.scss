@@ -1,8 +1,9 @@
 .map {
-  height: 418px;
+  min-height: 416px;
   width: 100%;
-  display: flex;
   position: relative;
+  box-sizing: border-box;
+  padding: 53px 0;
 }
 
 .map__image {
@@ -10,4 +11,16 @@
   top: 0;
   left: 0;
   z-index: 0;
+}
+
+.map__container {
+  display: flex;
+}
+
+.map__iframe {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
 }

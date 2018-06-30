@@ -2,6 +2,31 @@
   position: relative;
 }
 
+.cards__item {
+  width: 360px;
+}
+
+.card__browser {
+  width: 100%;
+  border-radius: 3px 3px 0 0;
+  height: 40px;
+  background-color: #e9e9e9;
+  position: relative;
+}
+
+.card__browser:before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 17px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 23px 0 0 #fff,
+              46px 0 0 #fff;
+}
+
 .card__name {
   font-size: 18px;
   line-height: 30px;
@@ -22,6 +47,7 @@
 }
 
 .card__info {
+  display: none;
   box-sizing: border-box;
   width: 360px;
   text-align: center;
@@ -29,5 +55,20 @@
 }
 
 .card__btn {
-  margin: 30px auto 0 auto;
+  width: 160px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 20px auto 0 auto;
+}
+
+.cards__item:hover {
+  box-shadow: 0 6px 15px 0 rgba(0,1,1,.25);
+}
+
+.cards__item:hover .card__browser {
+  background-color: #4d4d4d;
+}
+
+.cards__item:hover .card__info {
+  display: block;
 }

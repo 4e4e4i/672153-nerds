@@ -1,9 +1,14 @@
-.slide--hidden {
+.slide {
   display: none;
 }
 
 .slide--shown {
   display: block;
+}
+
+.slide__info {
+  position: relative;
+  z-index: 1;
 }
 
 .slide__title {
@@ -17,9 +22,17 @@
 .slide__text {
   margin-top: 0;
   margin-bottom: 40px;
+  width: 410px;
 }
 
-.slide__btn {
+.slide .slide__btn {
   padding-right: 55px;
   padding-left: 55px;
+}
+
+.slide__image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
 }

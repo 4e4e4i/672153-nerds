@@ -2,7 +2,8 @@
   margin-right: 100px;
 }
 
-.logo__img:hover, .logo__img:focus {
+.logo__link[href] .logo__img:hover,
+.logo__link[href] .logo__img:focus {
   opacity: 0.8;
 }
 
