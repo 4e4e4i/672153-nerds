@@ -16,7 +16,7 @@ $(function () {
     var MapPlacemark = new ymaps.Placemark([59.938631, 30.323055], {}, {
       balloonMaxWidth: 320,
       iconLayout: 'default#image',
-      iconImageHref: '../img/map-marker.png',
+      iconImageHref: './img/map-marker.png',
       iconImageSize: [231, 190],
       iconImageOffset: [-50, -190]
     });
