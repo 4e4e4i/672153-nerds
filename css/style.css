@@ -302,13 +302,13 @@ a {
   margin-bottom: 32px; }
 
 .service__image--laptop {
-  background-image: url("/img/illustration-1.jpg"); }
+  background-image: url("../img/illustration-1.jpg"); }
 
 .service__image--phones {
-  background-image: url("/img/illustration-2.jpg"); }
+  background-image: url("../img/illustration-2.jpg"); }
 
 .service__image--table {
-  background-image: url("/img/illustration-3.jpg"); }
+  background-image: url("../img/illustration-3.jpg"); }
 
 .about-us {
   display: flex;
@@ -725,11 +725,11 @@ a {
   left: 0;
   width: 27px;
   height: 23px;
-  background: url("/img/checkbox-off.svg") no-repeat;
+  background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 0.45; }
 
 .checkbox__input:checked + .checkbox__label::before {
-  background: url("/img/checkbox-on.svg") no-repeat; }
+  background: url("../img/checkbox-on.svg") no-repeat; }
 
 .checkbox__input:hover + .checkbox__label::before,
 .checkbox__input:focus + .checkbox__label::before,

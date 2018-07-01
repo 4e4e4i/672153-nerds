@@ -11,12 +11,12 @@
   left: 0;
   width: 27px;
   height: 23px;
-  background: url("/img/checkbox-off.svg") no-repeat;
+  background: url("../img/checkbox-off.svg") no-repeat;
   opacity: 0.45;
 }
 
 .checkbox__input:checked + .checkbox__label::before {
-  background: url("/img/checkbox-on.svg") no-repeat;
+  background: url("../img/checkbox-on.svg") no-repeat;
 }
 
 .checkbox__input:hover + .checkbox__label::before,
