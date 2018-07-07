@@ -25,3 +25,11 @@
 .checkbox__input:focus + .checkbox__label {
   opacity: 1;
 }
+
+.checkbox__input:disabled + .checkbox__label::before,
+.checkbox__input:disabled + .checkbox__label::before,
+.checkbox__input:disabled + .checkbox__label,
+.checkbox__input:disabled + .checkbox__label {
+  opacity: 0.3;
+  cursor: default;
+}

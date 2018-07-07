@@ -10,7 +10,7 @@
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -720px;
+  transform: translateX(-50%);
   z-index: 0;
 }
 
@@ -18,7 +18,7 @@
   display: flex;
 }
 
-.map__iframe {
+.map__interactive {
   position: absolute;
   z-index: 1;
   bottom: 0;

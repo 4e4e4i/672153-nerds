@@ -29,3 +29,12 @@
 .radio__input:focus + .radio__label {
   opacity: 1;
 }
+
+.radio__input:disabled + .radio__label::before,
+.radio__input:disabled + .radio__label::before,
+.radio__input:disabled + .radio__label,
+.radio__input:disabled + .radio__label {
+  opacity: 0.3;
+  cursor: default;
+}
+

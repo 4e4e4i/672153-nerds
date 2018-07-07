@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -42,7 +42,7 @@
   <main class="catalog">
     <div class="page-wrapper catalog__wrapper">
       <div class="catalog__filter">
-        <form action="#" method="get" class="filter">
+        <form action="#" method="post" class="filter">
           <fieldset class="filter__field">
             <legend class="filter__legend filter__legend--main">Стоимость:</legend>
             <div class="range">
@@ -133,11 +133,11 @@
             <img src="./img/img-sedona.jpg" alt="Готовый шаблон гид-сайта города Sedona" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <a class="card__link">
+                <a href="#" class="card__link">
                   <h3 class="card__name">Sedona</h3>
                 </a>
                 <p class="card__description">Информационный сайт для&nbsp;туристов</p>
-                <a href="#" class="btn card__btn">9900 руб.</a>
+                <a href="#" class="btn card__btn">9 900 руб.</a>
               </div>
             </div>
           </article>
@@ -146,11 +146,11 @@
             <img src="./img/img-pink.jpg" alt="Готовый шаблон сайта приложения для смартфонов «Pink»" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <a class="card__link">
+                <a href="#" class="card__link">
                   <h3 class="card__name">Pink App</h3>
                 </a>
                 <p class="card__description">Продуктовый лендинг приложения для iOS и Android</p>
-                <a href="#" class="btn card__btn">9900 руб.</a>
+                <a href="#" class="btn card__btn">9 900 руб.</a>
               </div>
             </div>
           </article>
@@ -159,11 +159,11 @@
             <img src="./img/img-barbershop.jpg" alt="Готовый шаблон сайта барбершопа «Borodinski»" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <a class="card__link">
+                <a href="#" class="card__link">
                   <h3 class="card__name">Barbershop</h3>
                 </a>
                 <p class="card__description">Сайт салона красоты<br>Для мужчин, да</p>
-                <a href="#" class="btn card__btn">9900 руб.</a>
+                <a href="#" class="btn card__btn">9 900 руб.</a>
               </div>
             </div>
           </article>
@@ -172,11 +172,11 @@
             <img src="./img/img-mishka.jpg" alt="Готовый шаблон магазина вязанных товаров «Mishka»" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <a class="card__link">
+                <a href="#" class="card__link">
                   <h3 class="card__name">Mishka</h3>
                 </a>
                 <p class="card__description">Интернет магазин<br>вязаных игрушек</p>
-                <a href="#" class="btn card__btn">9900 руб.</a>
+                <a href="#" class="btn card__btn">9 900 руб.</a>
               </div>
             </div>
           </article>
@@ -185,11 +185,11 @@
             <img src="./img/img-aplus.jpg" alt="Готовый шаблон сайта «A Plus»" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <a class="card__link">
+                <a href="#" class="card__link">
                   <h3 class="card__name">A Plus</h3>
                 </a>
                 <p class="card__description">Лендинг курсов повышения квалификации</p>
-                <a href="#" class="btn card__btn">9900 руб.</a>
+                <a href="#" class="btn card__btn">9 900 руб.</a>
               </div>
             </div>
           </article>
@@ -198,11 +198,11 @@
             <img src="./img/img-kvast.jpg" alt="Готовый шаблон сайта магазина крафтового кваса «Kvast»" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <a class="card__link">
+                <a href="#" class="card__link">
                   <h3 class="card__name">Кваст</h3>
                 </a>
                 <p class="card__description">Промо-сайт производителя крафтового кваса</p>
-                <a href="#" class="btn card__btn">9900 руб.</a>
+                <a href="#" class="btn card__btn">9 900 руб.</a>
               </div>
             </div>
           </article>
@@ -234,8 +234,8 @@
           <a href="form.html" class="btn contacts__btn">Напишите нам</a>
         </section>
       </div>
-      <img class="map__image" src="./img/map.jpg" alt="Карта с местоположением студии" height="416" width="1440">
-      <div id="map" class="map__iframe"></div>
+      <img class="map__image" src="./img/map.png" alt="Карта с местоположением студии" height="416" width="1160">
+      <div id="map" class="map__interactive"></div>
     </section>
   </main>
   <div class="page-wrapper">
