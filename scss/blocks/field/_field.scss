@@ -18,16 +18,19 @@
   margin-top: 10px;
 }
 
-.field__input:hover {
+.field__input:hover,
+.field__textarea:hover {
   border: 2px solid #b4b9bb;
 }
 
-.field__input:focus {
+.field__input:focus,
+.field__textarea:focus {
   border: 2px solid #000000;
   outline: none;
 }
 
-.field__input:invalid {
+.field__input:invalid,
+.field__textarea:invalid {
   border: 2px solid #e74246;
   color: #e74246;
 }

@@ -43,7 +43,7 @@
 }
 
 .sorting__link--active,
-.sorting__link:active {
+.sorting__link:active.sorting__link:hover{
   opacity: 1;
 }
 
@@ -90,6 +90,6 @@
 }
 
 .sorting__direction--active,
-.sorting__direction:active {
+.sorting__direction:active.sorting__direction:hover {
   opacity: 1;
 }
