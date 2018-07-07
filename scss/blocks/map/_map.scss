@@ -1,5 +1,5 @@
 .map {
-  min-height: 416px;
+  height: 416px;
   width: 100%;
   position: relative;
   box-sizing: border-box;
@@ -8,9 +8,9 @@
 
 .map__image {
   position: absolute;
-  width: 100%;
   top: 0;
-  left: 0;
+  left: 50%;
+  margin-left: -720px;
   z-index: 0;
 }
 

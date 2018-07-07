@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div class="accent-bg">
@@ -252,7 +253,7 @@
       </section>
     </footer>
   </div>
-  <div class="popup popup--hidden">
+  <div class="popup">
     <form action="post" class="popup__form">
       <fieldset class="popup__container">
         <legend class="popup__legend">Напишите нам</legend>
@@ -263,7 +264,7 @@
           </label>
           <label class="popup__field field">
             Ваш e-mail:
-            <input type="email" class="field__input" name="user_email" placeholder="email@example.com" required>
+            <input type="email" class="field__input" name="user_email" placeholder="email@example.com">
           </label>
         </div>
         <label class="popup__field popup__field--textarea field">
@@ -276,9 +277,7 @@
     </form>
   </div>
   <div class="popup-bg"></div>
-<script src="./js/slider.js"></script>
-<script src="./js/popup.js"></script>
-<script src="./js/map.js"></script>
-<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>
