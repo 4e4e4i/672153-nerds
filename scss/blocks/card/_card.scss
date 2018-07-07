@@ -1,9 +1,6 @@
 .card {
-  position: relative;
-}
-
-.cards__item {
   width: 360px;
+  position: relative;
 }
 
 .card__browser {
@@ -27,17 +24,30 @@
               46px 0 0 #fff;
 }
 
+.card__link {
+  cursor: pointer;
+}
+
+.card__link:hover .card__name, .card__link:focus .card__name {
+  opacity: 0.3;
+}
+
 .card__name {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-bottom: 15px;
 }
 
 .card__description {
   line-height: 18px;
+  max-height: 200px;
+  overflow: hidden;
   color: #666666;
+  margin: 0;
 }
 
 .card__iner {
@@ -51,14 +61,14 @@
   box-sizing: border-box;
   width: 360px;
   text-align: center;
-  padding: 30px 60px 44px 60px
+  padding: 26px 60px 49px 60px
 }
 
 .card__btn {
   width: 160px;
   padding-right: 20px;
   padding-left: 20px;
-  margin: 20px auto 0 auto;
+  margin: 31px auto 0 auto;
 }
 
 .cards__item:hover {

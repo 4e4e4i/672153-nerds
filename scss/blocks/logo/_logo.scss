@@ -1,12 +1,12 @@
-.logo__img {
-  margin-right: 100px;
+.logo {
+  margin-right: 60px;
 }
 
-.logo__link[href] .logo__img:hover,
-.logo__link[href] .logo__img:focus {
-  opacity: 0.8;
+.logo[href]:hover .logo__img,
+.logo[href]:focus .logo__img {
+  opacity: 0.7;
 }
 
-.logo__img:active {
+.logo[href]:active   .logo__img {
   opacity: 0.3;
 }

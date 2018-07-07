@@ -1,7 +1,7 @@
 .cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin-left: -40px;
 }
 
 .cards__container {
@@ -9,6 +9,6 @@
 }
 
 .cards__item {
-  width: 360px;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
+  margin-left: 40px;
 }

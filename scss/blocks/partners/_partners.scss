@@ -3,13 +3,13 @@
   padding-bottom: 40px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
-  margin-bottom: 80px;
+  margin-bottom: 76px;
 }
 
 .partners__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   margin: 0;
@@ -17,8 +17,9 @@
 }
 
 .partners__item {
-  padding-right: 50px;
+  flex-basis: 260px;
   position: relative;
+  text-align: center;
 }
 
 .partners__item:last-child {
@@ -29,7 +30,7 @@
   content: '';
   position: absolute;
   top: 50%;
-  right: 0;
+  right: -21px;
   transform: translateY(-26px);
   height: 52px;
   width: 2px;
@@ -41,7 +42,6 @@
 }
 
 .partners__link {
-  display: inline-block;
   opacity: 0.2;
 }
 

@@ -6,11 +6,10 @@
 }
 
 .pagination__item {
-  margin-right: 11px;
+  margin-right: 10px;
 }
 
 .pagination__link {
-  display: inline-block;
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -18,6 +17,8 @@
   background-color: #EEEEEE;
   padding: 16px 21px;
   border-radius: 2px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .pagination__link--next {

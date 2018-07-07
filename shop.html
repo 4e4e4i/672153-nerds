@@ -5,13 +5,12 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <script type="text/javascript" src="js/jquery.js"></script>
 </head>
 <body>
   <div class="accent-bg">
     <div class="page-wrapper">
       <header class="page-header">
-        <a href="index.html" class="logo__link">
+        <a href="index.html" class="logo">
           <img class="logo__img" src="./img/nerds-logo.png" alt="Нёрдс" height="65" width="160">
         </a>
         <nav class="menu">
@@ -44,7 +43,7 @@
       <div class="catalog__filter">
         <form action="#" method="get" class="filter">
           <fieldset class="filter__field">
-            <legend class="filter__legend">Стоимость:</legend>
+            <legend class="filter__legend filter__legend--main">Стоимость:</legend>
             <div class="range">
               <div class="range__track-container">
                 <div class="range__track">
@@ -133,8 +132,10 @@
             <img src="./img/img-sedona.jpg" alt="Готовый шаблон гид-сайта города Sedona" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <h3 class="card__name">Sedona</h3>
-                <p class="card__description">Информационный сайт для туристов</p>
+                <a class="card__link">
+                  <h3 class="card__name">Sedona</h3>
+                </a>
+                <p class="card__description">Информационный сайт для&nbsp;туристов</p>
                 <a href="#" class="btn card__btn">9900 руб.</a>
               </div>
             </div>
@@ -144,7 +145,9 @@
             <img src="./img/img-pink.jpg" alt="Готовый шаблон сайта приложения для смартфонов «Pink»" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <h3 class="card__name">Pink App</h3>
+                <a class="card__link">
+                  <h3 class="card__name">Pink App</h3>
+                </a>
                 <p class="card__description">Продуктовый лендинг приложения для iOS и Android</p>
                 <a href="#" class="btn card__btn">9900 руб.</a>
               </div>
@@ -155,7 +158,9 @@
             <img src="./img/img-barbershop.jpg" alt="Готовый шаблон сайта барбершопа «Borodinski»" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <h3 class="card__name">Barbershop</h3>
+                <a class="card__link">
+                  <h3 class="card__name">Barbershop</h3>
+                </a>
                 <p class="card__description">Сайт салона красоты<br>Для мужчин, да</p>
                 <a href="#" class="btn card__btn">9900 руб.</a>
               </div>
@@ -166,7 +171,9 @@
             <img src="./img/img-mishka.jpg" alt="Готовый шаблон магазина вязанных товаров «Mishka»" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <h3 class="card__name">Mishka</h3>
+                <a class="card__link">
+                  <h3 class="card__name">Mishka</h3>
+                </a>
                 <p class="card__description">Интернет магазин<br>вязаных игрушек</p>
                 <a href="#" class="btn card__btn">9900 руб.</a>
               </div>
@@ -177,7 +184,9 @@
             <img src="./img/img-aplus.jpg" alt="Готовый шаблон сайта «A Plus»" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <h3 class="card__name">A Plus</h3>
+                <a class="card__link">
+                  <h3 class="card__name">A Plus</h3>
+                </a>
                 <p class="card__description">Лендинг курсов повышения квалификации</p>
                 <a href="#" class="btn card__btn">9900 руб.</a>
               </div>
@@ -188,7 +197,9 @@
             <img src="./img/img-kvast.jpg" alt="Готовый шаблон сайта магазина крафтового кваса «Kvast»" class="card__img" height="576" width="360">
             <div class="card__iner">
               <div class="card__info">
-                <h3 class="card__name">Кваст</h3>
+                <a class="card__link">
+                  <h3 class="card__name">Кваст</h3>
+                </a>
                 <p class="card__description">Промо-сайт производителя крафтового кваса</p>
                 <a href="#" class="btn card__btn">9900 руб.</a>
               </div>
@@ -218,13 +229,12 @@
           <h3 class="visually-hidden">Контактная информация</h3>
           <p class="contacts__title">Nёrds design studio</p>
           <p class="contacts__text">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</p>
-          <a href="tel:+781227575" class="contacts__phone">тел. +7(812)275-75-75</a>
-          <a href="#" class="btn contacts__btn">Напишите нам</a>
+          <a href="tel:+781227575" class="contacts__phone">тел. +7&nbsp;(812)&nbsp;275-75-75</a>
+          <a href="form.html" class="btn contacts__btn">Напишите нам</a>
         </section>
       </div>
       <img class="map__image" src="./img/map.jpg" alt="Карта с местоположением студии" height="416" width="1440">
       <div id="map" class="map__iframe"></div>
-      </iframe>
     </section>
   </main>
   <div class="page-wrapper">
@@ -252,7 +262,7 @@
             <input type="text" class="field__input" name="username" placeholder="Имя Фамилия">
           </label>
           <label class="popup__field field">
-            Ваше email:
+            Ваш e-mail:
             <input type="email" class="field__input" name="user_email" placeholder="email@example.com" required>
           </label>
         </div>

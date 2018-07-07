@@ -1,13 +1,13 @@
 .sorting {
   width: 760px;
   display: flex;
-  margin-bottom: 56px;
+  margin-bottom: 51px;
 }
 
 .sorting__list {
   display: flex;
   flex-wrap: wrap;
-  width: 293px;
+  width: 305px;
   align-items: center;
   list-style: none;
   margin: 0;
@@ -52,10 +52,11 @@
 }
 
 .sorting__direction {
-  display: inline-block;
   width: 10px;
   height: 10px;
   opacity: 0.2;
+  display: inline-block;
+  vertical-align: middle;
   position: relative;
 }
 
